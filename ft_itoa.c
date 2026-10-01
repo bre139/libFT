@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 20:38:23 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 21:27:55 by breheg           ###   ########.fr       */
+/*   Created: 2026/10/01 21:22:52 by breheg            #+#    #+#             */
+/*   Updated: 2026/10/01 21:27:16 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+static int	ft_numlen(long l)
 {
-	d
+	if ()
+}
+
+char *ft_itoa(int n)
+{
+	
 }
 
 /*
-Allocates memory (using malloc(3)) and returns an
-array of strings obtained by splitting ’s’ using
-the character ’c’ as a delimiter.
-Each string in the returned array is allocated
-independently.
-The array of pointers itself is also allocated
-dynamically.
-The returned array must be NULL terminated.
+Allocates memory (using malloc(3)) and returns
+a string representing the integer received as an
+argument. Negative numbers must be handled.
+return value:
+The string representing the integer.
+NULL if the allocation fails.
 */
