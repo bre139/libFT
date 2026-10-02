@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
-
 /*===============================================================*/
 // CHARACKTERS CHECKS
 /*===============================================================*/
@@ -77,11 +76,5 @@ typedef struct s_list
 	void *content;
 	struct s_list *next;
 } t_list;
-
-
-
-
-
-
 
 #endif
