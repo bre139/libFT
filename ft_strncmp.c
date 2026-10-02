@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 17:46:53 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 18:07:54 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/02 14:15:07 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,13 @@ RETURN VALUE
        zero  if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match,
        or be greater than s2.
 */
+
+/*
+int	main(void)
+{
+	char s1[] = "Hi";
+	char s2[] = "Hello";
+	int result = ft_strncmp(s1, s2, 5);
+	printf("%d", result);
+}
+*/	
