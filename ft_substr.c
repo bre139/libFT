@@ -6,39 +6,39 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:35:45 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 20:19:43 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 21:00:43 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	int		i;
+// size_t	ft_strlen(const char *s)
+// {
+// 	int		i;
 	
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
+// 	i = 0;
+// 	while (s[i])
+// 		i++;
+// 	return (i);
+// }
 
-char	*ft_strdup(const char *s)
-{
-	char	*str;
-	size_t	i;
+// char	*ft_strdup(const char *s)
+// {
+// 	char	*str;
+// 	size_t	i;
 
-	i = 0;
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
-	if (!str)
-		return (NULL);
-	while (s[i])
-	{
-		str[i] = (char)s[i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
+// 	i = 0;
+// 	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+// 	if (!str)
+// 		return (NULL);
+// 	while (s[i])
+// 	{
+// 		str[i] = (char)s[i];
+// 		i++;
+// 	}
+// 	str[i] = '\0';
+// 	return (str);
+// }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -63,7 +63,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-
 /*
 	DESCRIPTION :
 	The function ft_substr extracts a substring from the given string by
@@ -75,22 +74,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	NULL if the memory allocation fails.
 */
 
-int	main(void)
-{
-	unsigned int	start;
-	size_t			len;
-	char *src_ptr = "coding is fun";
+// int	main(void)
+// {
+// 	unsigned int	start;
+// 	size_t			len;
+// 	char *src_ptr = "coding is fun";
 
-	start = 7;
-	len = 9;
-	printf("start: %d\n", start);
-	printf("length: %zu\n", len);
-	printf("Substring: '%s'\n\n",ft_substr(src_ptr, start, len));
+// 	start = 7;
+// 	len = 9;
+// 	printf("start: %d\n", start);
+// 	printf("length: %zu\n", len);
+// 	printf("Substring: '%s'\n\n",ft_substr(src_ptr, start, len));
 
-	start = 7;
-	len = 99;
-	printf("start: %d\n", start);
-	printf("length: %zu\n", len);
-	printf("Substring: '%s'\n\n",ft_substr(src_ptr, start, len));
-	return (0);
-}
+// 	start = 7;
+// 	len = 99;
+// 	printf("start: %d\n", start);
+// 	printf("length: %zu\n", len);
+// 	printf("Substring: '%s'\n\n",ft_substr(src_ptr, start, len));
+// 	return (0);
+// }

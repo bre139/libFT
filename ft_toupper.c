@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 19:45:12 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 16:28:50 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 21:01:05 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-int main(void)
-{
-	printf("RESULTS %d", ft_toupper('a'));
-	return 0;
-}
+// int main(void)
+// {
+// 	printf("RESULTS %d", ft_toupper('a'));
+// 	return 0;
+// }
 
 /*
 NAME

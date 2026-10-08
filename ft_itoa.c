@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 21:22:52 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/02 12:56:45 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 20:51:02 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,24 +59,24 @@ char *ft_itoa(int n)
 	return (str);
 }
 
-int	main(void)
-{
-	char	*str;
+// int	main(void)
+// {
+// 	char	*str;
 
-	// Expected: 42
-	str = ft_itoa(42);
-	printf("%s\n", str);
-	free(str);
-	// Expected: 2147483647
-	str = ft_itoa(2147483647);
-	printf("%s\n", str);
-	free(str);
-	// Expected: -2147483648
-	str = ft_itoa(-2147483648);
-	printf("%s\n", str);
-	free(str);
-	return (0);
-}
+// 	// Expected: 42
+// 	str = ft_itoa(42);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	// Expected: 2147483647
+// 	str = ft_itoa(2147483647);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	// Expected: -2147483648
+// 	str = ft_itoa(-2147483648);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	return (0);
+// }
 /*
 Allocates memory (using malloc(3)) and returns
 a string representing the integer received as an

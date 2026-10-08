@@ -6,21 +6,21 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:04:59 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 19:13:20 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 20:56:54 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	int		i;
+// size_t	ft_strlen(const char *s)
+// {
+// 	int		i;
 	
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
+// 	i = 0;
+// 	while (s[i])
+// 		i++;
+// 	return (i);
+// }
 
 char	*ft_strdup(const char *s)
 {

@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 18:44:20 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 18:54:29 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/06 12:56:31 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,17 @@ int	ft_atoi(const char *nptr)
 
 /*
 DESCRIPTION
-       The  atoi()  function  converts  the initial portion of the string pointed to by nptr to int.
-       The behavior is the same as
+The  atoi()  function  converts  the initial portion of the string
+pointed to by nptr to int.
+The behavior is the same as
 
-           strtol(nptr, NULL, 10);
+strtol(nptr, NULL, 10);
 
-       except that atoi() does not detect errors.
+except that atoi() does not detect errors.
 
-       The atol() and atoll() functions behave the same as atoi(), except that they convert the ini‐
-       tial portion of the string to their return type of long or long long.
+The atol() and atoll() functions behave the same as atoi(),
+except that they convert the ini‐
+tial portion of the string to their return type of long or long long.
 
 RETURN VALUE
        The converted value or 0 on error.

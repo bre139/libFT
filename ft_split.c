@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 20:38:23 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/02 12:57:40 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 20:56:36 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,25 @@ char	**ft_split(char const *s, char c)
 	return (strs);
 }
 
+// int	main(void)
+// {
+// 	char	**str;
+// 	int		i;
+	
+// 	i = 0;
+// 	str = ft_split("hello world this is Codam", ' ');
+// 	if (!str)
+// 		return (1);
+// 	while (str[i])
+// 	{
+// 		printf("%s\n", str[i]);
+// 		free(str[i]);
+// 		i++;
+// 	}
+// 	free(str);
+// 	return (0);
+// }
+
 /*
 Allocates memory (using malloc(3)) and returns an
 array of strings obtained by splitting ’s’ using
@@ -94,23 +113,3 @@ The array of pointers itself is also allocated
 dynamically.
 The returned array must be NULL terminated.
 */
-
-int	main(void)
-{
-	char	**str;
-	int		i;
-	
-	i = 0;
-	str = ft_split("hello world this is Codam", ' ');
-	if (!str)
-		return (1);
-	while (str[i])
-	{
-		printf("%s\n", str[i]);
-		free(str[i]);
-		i++;
-	}
-	free(str);
-	return (0);
-
-}
