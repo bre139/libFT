@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:35:45 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 21:00:43 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 23:32:50 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // size_t	ft_strlen(const char *s)
 // {
 // 	int		i;
-	
+
 // 	i = 0;
 // 	while (s[i])
 // 		i++;
@@ -45,7 +45,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 	size_t	i;
 	size_t	j;
-	
+
 	i = start;
 	j = 0;
 	if (!s)
@@ -64,14 +64,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 
 /*
-	DESCRIPTION :
-	The function ft_substr extracts a substring from the given string by
-	allocating sufficient memory for the new string starting at index start
-	and ending at len characters.
+DESCRIPTION :
+The function ft_substr extracts a
+substring from the given string by
+allocating sufficient memory for the new
+string starting at index start
+and ending at len characters.
 
-	RETURN VALUE :
-	A pointer to the new string.
-	NULL if the memory allocation fails.
+RETURN VALUE:
+A pointer to the new string.
+NULL if the memory allocation fails.
 */
 
 // int	main(void)

@@ -1,10 +1,10 @@
 # Your Makefile must contain at least the rules $(NAME), all, clean, fclean and re.
 NAME = libft.a
 
-CFLAGS = -Wall -Werror -Wextra
-CC = cc CFLAGS = -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
-SRCS = \ 
+SRCS = \
 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 	ft_isprint.c ft_toupper.c ft_tolower.c \
 	ft_strlen.c ft_strlcpy.c ft_strlcat.c \
@@ -18,23 +18,22 @@ SRCS = \
 	ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
-OBJS = $(SRC:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c libft.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
 
-fclean:
-	clean rm -f $(NAME)
+fclean: clean
+	rm -f $(NAME)
 
-re:
-	fclean all
+re: fclean all
 
 .PHONY: all clean fclean re

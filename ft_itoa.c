@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 21:22:52 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 20:51:02 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/14 23:43:12 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	ft_numlen(long l)
 {
 	int		i;
-	
+
 	i = 1;
 	if (l < 0)
 	{
@@ -30,7 +30,7 @@ static int	ft_numlen(long l)
 	return (i);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	long	l;
 	int		len;
@@ -39,7 +39,7 @@ char *ft_itoa(int n)
 
 	l = n;
 	negative = (l < 0);
-	len = ft_gl(n);
+	len = ft_numlen(n);
 	str = malloc(len + 1);
 	if (!str)
 		return (NULL);
@@ -77,6 +77,7 @@ char *ft_itoa(int n)
 // 	free(str);
 // 	return (0);
 // }
+
 /*
 Allocates memory (using malloc(3)) and returns
 a string representing the integer received as an

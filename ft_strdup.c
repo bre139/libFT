@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 19:04:59 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 20:56:54 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:57:53 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // size_t	ft_strlen(const char *s)
 // {
 // 	int		i;
-	
+//
 // 	i = 0;
 // 	while (s[i])
 // 		i++;
@@ -42,17 +42,19 @@ char	*ft_strdup(const char *s)
 
 /*
 DESCRIPTION
-       The strdup() function returns a pointer to a new string which is a duplicate of the string s.
-       Memory for the new string is obtained with malloc(3), and can be freed with free(3).
+The strdup() function returns a pointer to a new
+string which is a duplicate of the string s.
+Memory for the new string is obtained with malloc(3),
+and can be freed with free(3).
 
-       The strndup() function is similar, but copies at most n bytes.  If s is longer than n, only n
-       bytes are copied, and a terminating null byte ('\0') is added.
-
-       strdupa()  and  strndupa()  are  similar, but use alloca(3) to allocate the buffer.  They are
-       available only when using the GNU GCC suite, and suffer from the same  limitations  described
-       in alloca(3).
+The strndup() function is similar, but copies at
+most n bytes.  If s is longer than n, only n
+bytes are copied, and a terminating null byte ('\0')
+is added.
 
 RETURN VALUE
-       On  success,  the  strdup()  function returns a pointer to the duplicated string.  It returns
-       NULL if insufficient memory was available, with errno set to indicate the cause of the error.
+On  success,  the  strdup()  function returns a pointer
+to the duplicated string.  It returns
+NULL if insufficient memory was available,
+with errno set to indicate the cause of the error.
 */

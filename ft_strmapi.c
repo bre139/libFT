@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 13:00:10 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 20:59:30 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 23:05:35 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // size_t	ft_strlen(const char *s)
 // {
 // 	int		i;
-	
+
 // 	i = 0;
 // 	while (s[i])
 // 		i++;
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;
 	unsigned int	i;
-	
+
 	i = 0;
 	if (!s || !f)
 		return (NULL);
@@ -50,23 +50,23 @@ string is created (using malloc(3)) to store the
 results from the successive applications of f.
 */
 
-static char	ft_change(unsigned int i, char c)
-{
-	if (i % 2 == 0 && c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+// static char	ft_change(unsigned int i, char c)
+// {
+// 	if (i % 2 == 0 && c >= 'a' && c <= 'z')
+// 		return (c - 32);
+// 	return (c);
+// }
 
-int	main(void)
-{
-	char	*str;
+// int	main(void)
+// {
+// 	char	*str;
 
-	str = ft_strmapi("abcdef", ft_change);
-	if (!str)
-		return (1);
+// 	str = ft_strmapi("abcdef", ft_change);
+// 	if (!str)
+// 		return (1);
 
-	printf("%s\n", str); // Expected: AbCdEf
+// 	printf("%s\n", str); // Expected: AbCdEf
 
-	free(str);
-	return (0);
-}
+// 	free(str);
+// 	return (0);
+// }

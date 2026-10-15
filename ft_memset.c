@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 15:35:21 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 16:30:22 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:44:58 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*str;
 	size_t			i;
-	
+
 	i = 0;
 	str = (unsigned char *)s;
 	while (i < n)
@@ -29,8 +29,9 @@ void	*ft_memset(void *s, int c, size_t n)
 
 /*
 DESCRIPTION
-       The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.
+The memset() function fills the first n bytes of the
+memory area pointed to by s with the constant byte c.
 
 RETURN VALUE
-       The memset() function returns a pointer to the memory area s.
+The memset() function returns a pointer to the memory area s.
 */

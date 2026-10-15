@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 16:46:02 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/06 12:56:52 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:19:08 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,14 @@ void	ft_bzero(void *s, size_t n)
 
 /*
 DESCRIPTION
-The  bzero()  function  erases  the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros
+The  bzero()  function  erases  the data in the n bytes of the
+memory starting at the location pointed to by s, by writing zeros
 (bytes containing '\0') to that area.
 
-The explicit_bzero() function performs the same task as bzero().  It differs from bzero() in that it  guarantees  that  compiler
-optimizations will not remove the erase operation if the compiler deduces that the operation is "unnecessary".
+The explicit_bzero() function performs the same task as bzero().
+It differs from bzero() in that it  guarantees  that  compiler
+optimizations will not remove the erase operation if the compiler
+deduces that the operation is "unnecessary".
 
 RETURN VALUE
        None.

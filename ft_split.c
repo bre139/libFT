@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 20:38:23 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 20:56:36 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:54:22 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,35 +14,36 @@
 
 static int	ft_letter_count(char const *str, char c, int index)
 {
-    int     count;
+	int	count;
 
-    count = 0;
-    while (str[index] && str[index] != c)
-    {
-        count++;
-        index++;
-    }
-    return (count);
+	count = 0;
+	while (str[index] && str[index] != c)
+	{
+		count++;
+		index++;
+	}
+	return (count);
 }
+
 static int	ft_word_count(char const *str, char c)
 {
-    int		i;
-    int     count;
-    
-    i = 0;
-    count = 0;
-    while (str[i])
-    {
-        if (str[i] != c)
-        {
-            while (str[i] != c && str[i])
-                i++;
-            count++;
-        }
-        else
-            i++;
-    }
-    return (count);
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (str[i])
+	{
+		if (str[i] != c)
+		{
+			while (str[i] != c && str[i])
+				i++;
+			count++;
+		}
+		else
+			i++;
+	}
+	return (count);
 }
 
 static char	*ft_make_word(char const *str, char c, int *index)
@@ -88,7 +89,7 @@ char	**ft_split(char const *s, char c)
 // {
 // 	char	**str;
 // 	int		i;
-	
+//
 // 	i = 0;
 // 	str = ft_split("hello world this is Codam", ' ');
 // 	if (!str)

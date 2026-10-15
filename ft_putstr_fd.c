@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 13:18:55 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/02 13:25:16 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:52:40 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int		i;
-	
+	int	i;
+
 	i = 0;
 	while (s[i])
 	{
@@ -24,12 +24,11 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-int main(void)
-{
-	ft_putstr_fd("hello", 1);
-	return 0;
-}
-
+// int	main(void)
+// {
+// 	ft_putstr_fd("hello", 1);
+// 	return (0);
+// }
 
 /*
 Outputs the string ’s’ to the specified file

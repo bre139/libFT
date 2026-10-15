@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 20:00:47 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/08 20:58:26 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/15 00:22:58 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // size_t ft_strlen(const char *s)
 // {
 // 	int		i;
-	
+
 // 	i = 0;
 // 	while (s[i])
 // 		i++;
@@ -51,14 +51,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = malloc(s1_len + s2_len + 1);
 	if (!str)
 		return (NULL);
-	ft_strlcpy(str, s1, s2_len + 1);
+	ft_strlcpy(str, s1, s1_len + 1);
 	ft_strlcpy(str + s1_len, s2, s2_len + 1);
 	return (str);
 }
 
-int	main(void)
-{
-	printf("%s\n", ft_strjoin("Hello", " World!"));
+// int	main(void)
+// {
+// 	printf("%s\n", ft_strjoin("Hello", " World!"));
 
-	return (0);
-}
+// 	return (0);
+// }

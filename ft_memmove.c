@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 17:22:21 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/01 17:17:54 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/08 22:44:07 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
-	size_t			i;
+	size_t				i;
 
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
@@ -42,11 +42,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 /*
 DESCRIPTION
-       The memmove() function copies n bytes from memory area src to memory area dest.  The memory areas may overlap:
-       copying takes place as though the bytes in src are first copied into a temporary array that does  not  overlap
-       src or dest, and the bytes are then copied from the temporary array to dest.
+The memmove() function copies n bytes from memory area
+src to memory area dest.  The memory areas may overlap:
+copying takes place as though the bytes in src are first
+copied into a temporary array that does  not  overlap
+src or dest, and the bytes are then copied from
+the temporary array to dest.
 
 RETURN VALUE
-       The memmove() function returns a pointer to dest.
-
+The memmove() function returns a pointer to dest.
 */

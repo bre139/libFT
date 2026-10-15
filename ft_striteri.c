@@ -6,7 +6,7 @@
 /*   By: breheg <breheg@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 13:09:06 by breheg            #+#    #+#             */
-/*   Updated: 2026/10/02 16:45:44 by breheg           ###   ########.fr       */
+/*   Updated: 2026/10/14 23:44:34 by breheg           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
-	
+
 	i = 0;
 	if (!s || !f)
 		return ;
 	while (s[i])
 	{
-		f(i, s[i]);
+		f(i, &s[i]);
 		i++;
 	}
 }
